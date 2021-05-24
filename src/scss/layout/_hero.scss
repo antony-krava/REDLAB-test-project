@@ -1,0 +1,53 @@
+.hero-section .container {
+  display: flex;
+  position: relative;
+}
+
+.hero-title {
+  padding-top: 221px;
+  padding-left: 155px;
+  padding-right: 181px;
+  margin-bottom: 30px;
+
+  font-size: 76px;
+  line-height: 110%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.hero-text {
+  padding-left: 155px;
+  padding-right: 175px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.order-button {
+  position: absolute;
+  z-index: 2;
+  bottom: 2%;
+  right: 43%;
+
+  width: 195px;
+  height: 195px;
+  padding: 0 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: $accent-color;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transform: rotate(-20deg);
+
+  /* White */
+
+  color: #ffffff;
+}
