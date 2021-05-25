@@ -30,8 +30,8 @@
   bottom: 2%;
   right: 43%;
 
-  width: 195px;
-  height: 195px;
+  width: 175px;
+  height: 175px;
   padding: 0 15px;
   border-radius: 50%;
   border: none;
@@ -45,9 +45,17 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  transform: rotate(-20deg);
-
-  /* White */
+  transform: rotate(-30deg);
 
   color: #ffffff;
+
+  transition: transform 0.2s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
 }
+
+// .animate__animated.animate__heartBeat {
+// }
