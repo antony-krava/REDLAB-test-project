@@ -17,13 +17,15 @@
       <div class="container">
         <nav class="nav">
           <a class="logo" href="./index.html">
-            <img src="./images/logo.png" alt="Логотип компании" width="99" height="25">
+           <svg class="logo-ico">
+             <use href="./images/sprite.svg#icon-logo"></use>
+           </svg>
           </a>
           <div class="cleaning-area">
             <a class="home-area active" href="">Дом</a>
             <a class="office-area" href="">Офис</a>
           </div>
-          <div class="menu-container">
+          <div class="menu-container" id="menu-conteiner" data-menu>
             <ul class="nav-list">
               <li class="main-nav-list">
                 <a class="nav-list-item" href="">После ремонта</a>
@@ -42,6 +44,11 @@
           <address class="address">
               <a class="address-list-item" href="tel:+380674016977"><span class="address-tel">+380 67 401 69 77</span><div class="band"></div><span>24/7</span></a>
           </address>
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-conteiner" data-menu-button>
+            <svg width="32" height="32" aria-label="переключатель мобильного меню">
+              <use class="menu-icon" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -93,30 +100,30 @@
           <img class="work-img" src="./images/work-img.jpg" alt="Наша работа">
         </div>
       </section>
-      <section class="slider-section">
-       <div class="container">
+      <!-- <section class="slider-section"> -->
+       <!-- <div class="container"> -->
           <!-- Slider main container -->
-          <div class="swiper-container slider">
+          <!-- <div class="swiper-container slider"> -->
 
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <!-- <div class="swiper-wrapper"> -->
               <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="./images/slider-img-1.jpg" alt="Фото нашей работы">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/slider-img-1.jpg" alt="Фото нашей работы">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/slider-img-2.jpg" alt="Фото нашей работы">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/slider-img-2.jpg" alt="Фото нашей работы">
-              </div>
-            </div>
+              <!-- <div class="swiper-slide"> -->
+                <!-- <img src="./images/slider-img-1.jpg" alt="Фото нашей работы"> -->
+              <!-- </div> -->
+              <!-- <div class="swiper-slide"> -->
+                <!-- <img src="./images/slider-img-1.jpg" alt="Фото нашей работы"> -->
+              <!-- </div> -->
+              <!-- <div class="swiper-slide"> -->
+                <!-- <img src="./images/slider-img-2.jpg" alt="Фото нашей работы"> -->
+              <!-- </div> -->
+              <!-- <div class="swiper-slide"> -->
+                <!-- <img src="./images/slider-img-2.jpg" alt="Фото нашей работы"> -->
+              <!-- </div> -->
+            <!-- </div> -->
 
             <!-- If we need pagination -->
-            <div class="swiper-pagination custom-pagination"></div>
+            <!-- <div class="swiper-pagination custom-pagination"></div> -->
           
             <!-- If we need navigation buttons -->
             <!-- <div class="swiper-button-prev"></div>
@@ -124,9 +131,9 @@
           
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
-          </div>
-       </div>
-      </section>
+          <!-- </div> -->
+       <!-- </div> -->
+      <!-- </section> -->
     </main>
   </body>
 </html>

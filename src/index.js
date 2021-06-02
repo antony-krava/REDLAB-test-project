@@ -1,2 +1,3 @@
 import './styles.scss';
-import './js/swiper';
+import './js/menu';
+// import './js/swiper';

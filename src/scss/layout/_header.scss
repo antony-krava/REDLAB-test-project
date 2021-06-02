@@ -11,6 +11,13 @@
   padding: 23px 0;
 }
 
+.logo-ico {
+  width: 99px;
+  height: 25px;
+
+  fill: $main-text-color;
+}
+
 .cleaning-area {
   display: flex;
   align-items: center;
@@ -89,19 +96,23 @@
   margin-right: 32px;
 }
 
-.address-list-item {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
+.address {
+  margin-right: 32px;
 
-  color: $main-text-color;
-}
+  &-list-item {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
 
-.address-tel {
-  margin-right: 15px;
+    color: $main-text-color;
+  }
+
+  &-tel {
+    margin-right: 15px;
+  }
 }
 
 .band {
@@ -110,4 +121,45 @@
   margin-right: 15px;
   padding-top: 2px;
   background-color: $main-text-color;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.menu-container {
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and(max-width: $tablet) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 66;
+    height: 393px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    text-align: center;
+    background-color: $white-color;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media screen and (min-width: $mobile) {
+}
+
+@media screen and (min-width: $tablet) {
+}
+
+@media screen and (min-width: $desktop) {
 }
